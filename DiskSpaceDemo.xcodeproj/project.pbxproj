@@ -16,6 +16,9 @@
 		96D9B54326C4B67300C7EAEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9B54226C4B67300C7EAEE /* main.m */; };
 		96D9B54D26C4B67300C7EAEE /* DiskSpaceDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9B54C26C4B67300C7EAEE /* DiskSpaceDemoTests.m */; };
 		96D9B55826C4B67300C7EAEE /* DiskSpaceDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9B55726C4B67300C7EAEE /* DiskSpaceDemoUITests.m */; };
+		96D9B56926C4B6CD00C7EAEE /* UIDevice+DiskSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9B56826C4B6CD00C7EAEE /* UIDevice+DiskSpace.swift */; };
+		96D9B56C26C4B73600C7EAEE /* UIDevice+DiskSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9B56B26C4B73600C7EAEE /* UIDevice+DiskSpace.m */; };
+		96D9B56E26C4BB4400C7EAEE /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9B56D26C4BB4400C7EAEE /* SwiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,11 @@
 		96D9B55326C4B67300C7EAEE /* DiskSpaceDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiskSpaceDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D9B55726C4B67300C7EAEE /* DiskSpaceDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiskSpaceDemoUITests.m; sourceTree = "<group>"; };
 		96D9B55926C4B67300C7EAEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96D9B56726C4B6CD00C7EAEE /* DiskSpaceDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DiskSpaceDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		96D9B56826C4B6CD00C7EAEE /* UIDevice+DiskSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+DiskSpace.swift"; sourceTree = "<group>"; };
+		96D9B56A26C4B73600C7EAEE /* UIDevice+DiskSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DiskSpace.h"; sourceTree = "<group>"; };
+		96D9B56B26C4B73600C7EAEE /* UIDevice+DiskSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DiskSpace.m"; sourceTree = "<group>"; };
+		96D9B56D26C4BB4400C7EAEE /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +118,10 @@
 				96D9B53426C4B67000C7EAEE /* SceneDelegate.m */,
 				96D9B53626C4B67000C7EAEE /* ViewController.h */,
 				96D9B53726C4B67000C7EAEE /* ViewController.m */,
+				96D9B56D26C4BB4400C7EAEE /* SwiftViewController.swift */,
+				96D9B56726C4B6CD00C7EAEE /* DiskSpaceDemo-Bridging-Header.h */,
+				96D9B56626C4B69900C7EAEE /* Swift_DiskSpace */,
+				96D9B56526C4B68000C7EAEE /* OC_DiskSpace */,
 				96D9B53926C4B67000C7EAEE /* Main.storyboard */,
 				96D9B53C26C4B67300C7EAEE /* Assets.xcassets */,
 				96D9B53E26C4B67300C7EAEE /* LaunchScreen.storyboard */,
@@ -135,6 +147,23 @@
 				96D9B55926C4B67300C7EAEE /* Info.plist */,
 			);
 			path = DiskSpaceDemoUITests;
+			sourceTree = "<group>";
+		};
+		96D9B56526C4B68000C7EAEE /* OC_DiskSpace */ = {
+			isa = PBXGroup;
+			children = (
+				96D9B56A26C4B73600C7EAEE /* UIDevice+DiskSpace.h */,
+				96D9B56B26C4B73600C7EAEE /* UIDevice+DiskSpace.m */,
+			);
+			path = OC_DiskSpace;
+			sourceTree = "<group>";
+		};
+		96D9B56626C4B69900C7EAEE /* Swift_DiskSpace */ = {
+			isa = PBXGroup;
+			children = (
+				96D9B56826C4B6CD00C7EAEE /* UIDevice+DiskSpace.swift */,
+			);
+			path = Swift_DiskSpace;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +232,7 @@
 				TargetAttributes = {
 					96D9B52C26C4B67000C7EAEE = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					96D9B54726C4B67300C7EAEE = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -270,6 +300,9 @@
 				96D9B53226C4B67000C7EAEE /* AppDelegate.m in Sources */,
 				96D9B54326C4B67300C7EAEE /* main.m in Sources */,
 				96D9B53526C4B67000C7EAEE /* SceneDelegate.m in Sources */,
+				96D9B56E26C4BB4400C7EAEE /* SwiftViewController.swift in Sources */,
+				96D9B56926C4B6CD00C7EAEE /* UIDevice+DiskSpace.swift in Sources */,
+				96D9B56C26C4B73600C7EAEE /* UIDevice+DiskSpace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +474,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C84Z46TM59;
 				INFOPLIST_FILE = DiskSpaceDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -450,6 +485,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cingjin.DiskSpaceDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/DiskSpaceDemo/DiskSpaceDemo-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = DiskSpaceDemo_Swift.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -459,7 +498,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C84Z46TM59;
 				INFOPLIST_FILE = DiskSpaceDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,6 +509,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cingjin.DiskSpaceDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/DiskSpaceDemo/DiskSpaceDemo-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = DiskSpaceDemo_Swift.h;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -475,6 +519,7 @@
 		96D9B56026C4B67300C7EAEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C84Z46TM59;
@@ -495,6 +540,7 @@
 		96D9B56126C4B67300C7EAEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C84Z46TM59;
@@ -515,6 +561,7 @@
 		96D9B56326C4B67300C7EAEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C84Z46TM59;
 				INFOPLIST_FILE = DiskSpaceDemoUITests/Info.plist;
@@ -533,6 +580,7 @@
 		96D9B56426C4B67300C7EAEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C84Z46TM59;
 				INFOPLIST_FILE = DiskSpaceDemoUITests/Info.plist;
